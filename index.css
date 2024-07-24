@@ -37,7 +37,9 @@ header img {
     padding-left: 8px;
 }
 
-.post-name {
+.post-name,
+.likes-count,
+.post-username {
     font-size: 13px;
     font-weight: bold;
     margin: 0;
@@ -56,4 +58,23 @@ header img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
+}
+
+.button-bar {
+    padding: 20px 10px 10px;
+}
+
+.button-bar img {
+    height: 24px;
+    margin-right: 20px;
+}
+
+.post-text {
+    font-size: 13px;
+}
+
+.post-content,
+.likes-count {
+    padding-left: 12px;
+    margin: 0 0 12px;;
 }
