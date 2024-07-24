@@ -82,6 +82,10 @@ section {
 
 .post-content,
 .likes-count {
+    margin: 0;
     padding-left: 12px;
-    margin: 0 0 12px;;
+}
+
+.post-content {
+    padding-bottom: 16px;
 }
