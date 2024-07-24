@@ -1,5 +1,59 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: "Source Sans 3", "Comic Sans MS";
 }
 
+header {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+h1 {
+    margin: 0;
+}
+
+header img {
+    height: 34px;
+}
+
+.user-avatar,
+.post-profile-pic {
+    border-radius: 50%;
+    height: 34px;
+}
+
+.post-header {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.post-header-text {
+    padding-left: 8px;
+}
+
+.post-name {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.post-location {
+    font-size: 12px;
+    margin: 0;
+}
+
+.post-main-image-container {
+    background: #252525;
+}
+
+.post-main-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
