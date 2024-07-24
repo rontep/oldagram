@@ -9,16 +9,22 @@ header {
     padding: 16px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     border-bottom: 1px solid #C6C6C6;
+    background-color: white;
 }
 
 h1 {
     margin: 0;
+    display: flex;
 }
 
 header img {
     height: 34px;
+}
+
+section {
+    background-color: white;
 }
 
 .user-avatar,
