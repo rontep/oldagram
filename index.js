@@ -28,3 +28,43 @@ const posts = [
     }
 ]
 
+if (posts) {
+    for (let i = 0; i < posts.length; i++) {
+        renderPost(posts[i])
+    }
+}
+
+function renderPost(curPostObject) {
+    let currentOldagramPost = `
+    <section>
+        <div class="post-header">
+                <img class="post-profile-pic" src="${curPostObject.avatar}">
+                <div class="post-header-text">
+                    <p class="post-name">${curPostObject.name}</p>
+                    <p class="post-location">${curPostObject.location}</p>
+                </div>
+            </div>
+            
+            <div class="post-main-image-container">
+                <img class="post-main-image" src="${curPostObject.post}">
+            </div>
+
+            <div class="button-bar">
+                <img src="images/icon-heart.png">
+                <img src="images/icon-comment.png">
+                <img src="images/icon-dm.png">
+            </div>
+            
+            <p class="likes-count">${curPostObject.likes} likes</p>
+            <p class="post-content">
+                <span class="post-username">${curPostObject.username}</span>
+                <span class="post-text">${curPostObject.comment}</span>
+            </p>
+
+    </section>`
+
+    const bodyHTML = document.body;
+    bodyHTML.innerHTML += currentOldagramPost;
+}
+
+
